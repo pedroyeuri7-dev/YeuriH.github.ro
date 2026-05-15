@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yeuri Hernandez | Data and Retail Analytics Portfolio</title>
-  <meta name="description" content="Yeuri Hernandez is a London based MSc Data Science and AI graduate focused on retail analytics, demand forecasting, inventory planning, and commercial data analysis." />
+  <meta name="description" content="Yeuri Hernandez is a London based MSc Data Science and AI graduate focused on retail analytics, demand forecasting, customer intelligence, and commercial data analysis." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +16,8 @@
       --teal:#2DD4BF;--teal-2:#14B8A6;--teal-soft:rgba(45,212,191,.10);
       --amber:#F59E0B;--amber-soft:rgba(245,158,11,.10);
       --lime:#A3E635;--lime-soft:rgba(163,230,53,.10);
-      --violet:#A78BFA;--violet-soft:rgba(167,139,250,.10)
+      --violet:#A78BFA;--violet-soft:rgba(167,139,250,.10);
+      --coral:#FB7185;--coral-soft:rgba(251,113,133,.10);
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
@@ -29,28 +30,85 @@
     .nav-links{display:flex;gap:8px;flex-wrap:wrap}.nav-links a{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:7px 13px;border-radius:999px;transition:.2s}.nav-links a:hover{color:var(--teal);border-color:rgba(45,212,191,.35);background:var(--teal-soft)}
     .eyebrow{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.15em;color:var(--teal);font-size:11px;margin-bottom:22px}.dot{width:7px;height:7px;background:var(--teal);border-radius:50%;box-shadow:0 0 22px rgba(45,212,191,.5)}
     .hero{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:52px;align-items:start;margin-bottom:72px}
-    h1{font-family:'Fraunces',serif;font-weight:900;line-height:1.04;letter-spacing:-.035em;font-size:clamp(38px,6.6vw,72px);color:#fff;margin-bottom:28px}.grad{background:linear-gradient(110deg,var(--teal),var(--amber) 54%,var(--lime));-webkit-background-clip:text;color:transparent}.soft{font-style:italic;color:var(--muted);font-weight:500}
+    h1{font-family:'Fraunces',serif;font-weight:900;line-height:1.04;letter-spacing:-.035em;font-size:clamp(38px,6.6vw,72px);color:#fff;margin-bottom:28px}.grad{background:linear-gradient(110deg,var(--teal),var(--amber) 54%,var(--lime));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent}.soft{font-style:italic;color:var(--muted);font-weight:500}
     .hero p{color:var(--muted);font-size:16.5px;max-width:705px;margin-bottom:30px}.hero strong{color:var(--text);font-weight:600}
     .actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--border-2);transition:.22s}.btn-primary{background:var(--teal);color:#07100E;border-color:var(--teal)}.btn-primary:hover{background:var(--teal-2);transform:translateY(-2px);box-shadow:0 14px 34px rgba(45,212,191,.20)}.btn-secondary{color:var(--text);background:transparent}.btn-secondary:hover{color:var(--teal);border-color:rgba(45,212,191,.38);transform:translateY(-2px)}
+    .btn-amber{background:var(--amber);color:#1a0f00;border-color:var(--amber)}.btn-amber:hover{background:#d97706;transform:translateY(-2px);box-shadow:0 14px 34px rgba(245,158,11,.20)}
     .profile-card{background:var(--surface);border:1px solid var(--border);border-radius:22px;overflow:hidden}.card-top{height:2px;background:linear-gradient(90deg,var(--teal),var(--amber),var(--lime))}.profile-card .inner{padding:24px}.status{display:inline-flex;gap:8px;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--lime);background:var(--lime-soft);border:1px solid rgba(163,230,53,.22);padding:6px 13px;border-radius:999px;margin-bottom:18px}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime)}
     .row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--border)}.row:last-child{border-bottom:0}.row span:first-child{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}.row span:last-child{text-align:right;font-weight:600;font-size:13px;color:var(--text)}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:92px}.stat{background:var(--surface);padding:26px 18px;text-align:center;border-right:1px solid var(--border)}.stat:last-child{border-right:0}.num{font-family:'Fraunces',serif;font-size:34px;font-weight:900;margin-bottom:6px}.c-teal{color:var(--teal)}.c-amber{color:var(--amber)}.c-lime{color:var(--lime)}.c-violet{color:var(--violet)}.label{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase;line-height:1.45}
-    section{margin-bottom:92px}.section-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}.section-head span{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted);white-space:nowrap}.line{height:1px;background:var(--border);flex:1}h2{font-family:'Fraunces',serif;font-size:33px;line-height:1.15;color:#fff;letter-spacing:-.02em;margin-bottom:10px}.lead{color:var(--muted);max-width:720px;margin-bottom:34px}
-    .project{background:var(--surface);border:1px solid rgba(45,212,191,.16);border-radius:26px;overflow:hidden}.project-hero{padding:42px;background:linear-gradient(135deg,#080B08,#0A130F 55%,#080B0B);border-bottom:1px solid var(--border);position:relative}.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(45,212,191,.26);background:var(--teal-soft);color:var(--teal);font-family:'JetBrains Mono',monospace;font-size:11px;border-radius:999px;padding:6px 13px;margin-bottom:20px}.project h3{font-family:'Fraunces',serif;font-size:34px;color:#fff;margin-bottom:14px;letter-spacing:-.02em}.project p{color:var(--muted);max-width:770px}.project-body{padding:34px 42px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini{background:var(--surface-2);border:1px solid var(--border);border-radius:16px;padding:22px}.mini h4{font-family:'Fraunces',serif;color:#fff;font-size:16px;margin-bottom:8px}.mini p{font-size:13.5px;color:var(--muted)}.metric-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px}.metric{border-left:2px solid var(--border-2);padding-left:14px}.metric strong{display:block;font-family:'Fraunces',serif;color:var(--teal);font-size:29px;line-height:1}.metric span{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}.stack{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--border)}.pill{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:6px 11px;border-radius:8px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:92px}.stat{background:var(--surface);padding:26px 18px;text-align:center;border-right:1px solid var(--border)}.stat:last-child{border-right:0}.num{font-family:'Fraunces',serif;font-size:34px;font-weight:900;margin-bottom:6px}.c-teal{color:var(--teal)}.c-amber{color:var(--amber)}.c-lime{color:var(--lime)}.c-violet{color:var(--violet)}.c-coral{color:var(--coral)}.label{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase;line-height:1.45}
+    section{margin-bottom:92px}.section-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}.section-head span{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted);white-space:nowrap}.line{height:1px;background:var(--border);flex:1}
+    h2{font-family:'Fraunces',serif;font-size:33px;line-height:1.15;color:#fff;letter-spacing:-.02em;margin-bottom:10px}.lead{color:var(--muted);max-width:720px;margin-bottom:34px}
+
+    /* ── Flagship project (RetailCast) ── */
+    .project{background:var(--surface);border:1px solid rgba(45,212,191,.16);border-radius:26px;overflow:hidden}
+    .project-hero{padding:42px;background:linear-gradient(135deg,#080B08,#0A130F 55%,#080B0B);border-bottom:1px solid var(--border);position:relative}
+    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(45,212,191,.26);background:var(--teal-soft);color:var(--teal);font-family:'JetBrains Mono',monospace;font-size:11px;border-radius:999px;padding:6px 13px;margin-bottom:20px}
+    .badge-amber{border-color:rgba(245,158,11,.30);background:var(--amber-soft);color:var(--amber)}
+    .project h3{font-family:'Fraunces',serif;font-size:34px;color:#fff;margin-bottom:14px;letter-spacing:-.02em}.project p{color:var(--muted);max-width:770px}
+    .project-body{padding:34px 42px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .mini{background:var(--surface-2);border:1px solid var(--border);border-radius:16px;padding:22px}.mini h4{font-family:'Fraunces',serif;color:#fff;font-size:16px;margin-bottom:8px}.mini p{font-size:13.5px;color:var(--muted)}
+    .metric-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px}
+    .metric{border-left:2px solid var(--border-2);padding-left:14px}.metric strong{display:block;font-family:'Fraunces',serif;color:var(--teal);font-size:29px;line-height:1}.metric span{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+    .metric-amber strong{color:var(--amber)}
+    .stack{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--border)}.pill{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:6px 11px;border-radius:8px}
+    .pill-teal{color:var(--teal);border-color:rgba(45,212,191,.25);background:var(--teal-soft)}
+    .pill-amber{color:var(--amber);border-color:rgba(245,158,11,.25);background:var(--amber-soft)}
+
+    /* ── ClientIQ project (amber accent) ── */
+    .project-clientiq{background:var(--surface);border:1px solid rgba(245,158,11,.18);border-radius:26px;overflow:hidden;margin-top:28px}
+    .project-clientiq .project-hero{background:linear-gradient(135deg,#0B0900,#0F0E08 55%,#0A0B08)}
+    .project-clientiq .project-hero h3{font-size:30px}
+
+    /* ── Outcome strip ── */
+    .outcome-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:14px;overflow:hidden;margin:26px 0}
+    .outcome-cell{background:var(--surface-2);padding:18px 16px}
+    .outcome-label{font-family:'JetBrains Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin-bottom:6px}
+    .outcome-text{font-size:13.5px;color:var(--text);font-weight:500;line-height:1.45}
+
+    /* ── Experience ── */
     .experience{display:flex;flex-direction:column}.exp{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid var(--border)}.exp:first-child{padding-top:0}.exp:last-child{border-bottom:0}.date{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--faint)}.role{font-family:'Fraunces',serif;color:#fff;font-size:20px;font-weight:700}.company{color:var(--teal);font-family:'JetBrains Mono',monospace;font-size:11px;margin:5px 0 12px}.exp ul{list-style:none;display:flex;flex-direction:column;gap:8px}.exp li{color:var(--muted);font-size:14.2px;position:relative;padding-left:17px}.exp li:before{content:"";width:7px;height:1px;background:var(--faint);position:absolute;left:0;top:13px}.impact{display:inline-block;color:var(--teal);background:var(--teal-soft);border:1px solid rgba(45,212,191,.22);font-family:'JetBrains Mono',monospace;font-size:11px;border-radius:6px;padding:2px 8px;margin-left:4px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px}.card h3{font-family:'Fraunces',serif;font-size:18px;color:#fff;margin-bottom:8px}.card p{color:var(--muted);font-size:13.8px}.skill-block{margin-bottom:22px}.skill-block h3{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--faint);font-size:10px;margin-bottom:10px}.skills{display:flex;gap:8px;flex-wrap:wrap}.skill{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:7px 12px;border-radius:9px}.skill.core{color:var(--text);border-color:var(--border-2)}
-    .contact{background:var(--surface);border:1px solid var(--border);border-radius:24px;overflow:hidden}.contact .inner{padding:40px}.contact h2{margin-bottom:12px}.contact p{color:var(--muted);max-width:650px;margin-bottom:24px}footer{border-top:1px solid var(--border);padding-top:24px;color:var(--faint);font-family:'JetBrains Mono',monospace;font-size:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+    /* ── Additional projects ── */
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px}.card h3{font-family:'Fraunces',serif;font-size:18px;color:#fff;margin-bottom:8px}.card p{color:var(--muted);font-size:13.8px}
+    .card-highlight{border-color:rgba(245,158,11,.22);background:linear-gradient(135deg,var(--surface),#0F0E08)}
+
+    /* ── Skills ── */
+    .skill-block{margin-bottom:22px}.skill-block h3{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--faint);font-size:10px;margin-bottom:10px}.skills{display:flex;gap:8px;flex-wrap:wrap}.skill{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:7px 12px;border-radius:9px}.skill.core{color:var(--text);border-color:var(--border-2)}
+
+    /* ── Contact ── */
+    .contact{background:var(--surface);border:1px solid var(--border);border-radius:24px;overflow:hidden}.contact .inner{padding:40px}.contact h2{margin-bottom:12px}.contact p{color:var(--muted);max-width:650px;margin-bottom:24px}
+    footer{border-top:1px solid var(--border);padding-top:24px;color:var(--faint);font-family:'JetBrains Mono',monospace;font-size:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
     .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}.reveal.on{opacity:1;transform:none}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--border)}.grid-2,.cards{grid-template-columns:1fr}.exp{grid-template-columns:1fr;gap:8px}.project-hero,.project-body{padding:28px}.wrap{padding:34px 20px 70px}}
-    @media(max-width:560px){.stats{grid-template-columns:1fr}.stat{border-right:0;border-top:1px solid var(--border)}.stat:first-child{border-top:0}.nav-links{width:100%}.nav-links a{flex:1;text-align:center}.actions .btn{width:100%}}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--border)}
+      .grid-2,.cards{grid-template-columns:1fr}
+      .exp{grid-template-columns:1fr;gap:8px}
+      .project-hero,.project-body{padding:28px}
+      .eval-strip{grid-template-columns:repeat(3,1fr)}
+      .wrap{padding:34px 20px 70px}
+    }
+    @media(max-width:560px){
+      .stats{grid-template-columns:1fr}.stat{border-right:0;border-top:1px solid var(--border)}.stat:first-child{border-top:0}
+      .nav-links{width:100%}.nav-links a{flex:1;text-align:center}
+      .actions .btn{width:100%}
+      .eval-strip{grid-template-columns:1fr 1fr}
+      .metric-row{gap:16px}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
+
+    <!-- NAV -->
     <nav class="reveal">
       <a href="index.html" class="logo">yeuri<span>.</span></a>
       <div class="nav-links">
         <a href="#retailcast">RetailCast</a>
+        <a href="#clientiq">ClientIQ</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -58,11 +116,12 @@
       </div>
     </nav>
 
+    <!-- HERO -->
     <header class="hero reveal">
       <div>
         <div class="eyebrow"><span class="dot"></span>Data Science and Retail Analytics</div>
         <h1>Forecasting, analytics, and <span class="grad">practical decisions</span> <span class="soft">grounded in retail.</span></h1>
-        <p>I am <strong>Yeuri Hernandez</strong>, an MSc Data Science and AI graduate based in London. My work focuses on retail analytics, demand forecasting, inventory planning, and commercial reporting. I combine hands-on retail operations experience with technical modelling to understand both the data and the decision environment behind it.</p>
+        <p>I am <strong>Yeuri Hernandez</strong>, an MSc Data Science and AI graduate based in London. My work focuses on retail analytics, demand forecasting, customer intelligence, and commercial reporting. I combine hands-on retail operations experience with technical modelling to understand both the data and the decision environment behind it.</p>
         <div class="actions">
           <a class="btn btn-primary" href="Yeuri_Hernandez_CV26.docx" download>Download CV</a>
           <a class="btn btn-secondary" href="https://www.linkedin.com/in/yeuri-hernandez-000183196" target="_blank" rel="noopener">LinkedIn</a>
@@ -77,10 +136,12 @@
           <div class="row"><span>MSc</span><span>Data Science and AI</span></div>
           <div class="row"><span>BSc</span><span>Marketing</span></div>
           <div class="row"><span>Flagship</span><span>RetailCast</span></div>
+          <div class="row"><span>Also</span><span>ClientIQ</span></div>
         </div>
       </aside>
     </header>
 
+    <!-- STATS -->
     <div class="stats reveal">
       <div class="stat"><div class="num c-teal">2.74%</div><div class="label">Stock variance reduction</div></div>
       <div class="stat"><div class="num c-lime">4.8%</div><div class="label">Stock discrepancy reduction</div></div>
@@ -88,38 +149,120 @@
       <div class="stat"><div class="num c-violet">2026</div><div class="label">MSc completed</div></div>
     </div>
 
+    <!-- RETAILCAST -->
     <section id="retailcast" class="reveal">
       <div class="section-head"><span>01 | Flagship project</span><div class="line"></div></div>
       <h2>RetailCast</h2>
-      <p class="lead">A retail demand forecasting case study built to connect modelling with operational inventory decisions.</p>
+      <p class="lead">A demand forecasting tool built to help retail teams make better stock decisions, not just better models.</p>
       <article class="project">
         <div class="project-hero">
-          <div class="badge">MSc project | Forecasting | Retail analytics</div>
-          <h3>RetailCast: Retail Demand Forecasting System</h3>
-          <p>RetailCast is a forecasting project designed to improve demand prediction and inventory planning in retail environments. The system uses sales history, seasonality, product behaviour, and external demand signals to generate forecasts and support better stock decisions.</p>
-          <div class="metric-row">
-            <div class="metric"><strong>ARIMA</strong><span>Baseline model</span></div>
-            <div class="metric"><strong>Prophet</strong><span>Trend and seasonality</span></div>
-            <div class="metric"><strong>LSTM</strong><span>Deep learning exploration</span></div>
-            <div class="metric"><strong>RMSE</strong><span>Model evaluation</span></div>
-          </div>
+          <div class="badge">MSc Dissertation | Demand Forecasting | Retail Planning</div>
+          <h3>RetailCast</h3>
+          <p>Retailers regularly face the same two problems: too much stock in the wrong place, or not enough where it matters. Poor forecasting sits behind both. RetailCast was built to close that gap, turning sales history into clear, actionable demand signals that planners can actually use.</p>
         </div>
         <div class="project-body">
+          <div class="outcome-strip">
+            <div class="outcome-cell">
+              <div class="outcome-label">The problem</div>
+              <div class="outcome-text">Store teams and planners were making replenishment decisions without reliable forward visibility into demand.</div>
+            </div>
+            <div class="outcome-cell">
+              <div class="outcome-label">What was built</div>
+              <div class="outcome-text">A forecasting system that combines sales history, seasonality, and product trends to generate weekly demand estimates by product family.</div>
+            </div>
+            <div class="outcome-cell">
+              <div class="outcome-label">Who it helps</div>
+              <div class="outcome-text">Demand planners, inventory analysts, and store operations teams who need practical visibility rather than a raw model output.</div>
+            </div>
+          </div>
           <div class="grid-2">
-            <div class="mini"><h4>Business problem</h4><p>Retailers often face stockouts, overstock, and delayed replenishment decisions because forecasts do not always reflect actual trading conditions. RetailCast explores how forecasting can help create clearer planning signals.</p></div>
-            <div class="mini"><h4>Technical approach</h4><p>The project compares time-series and machine learning methods, applies feature engineering, evaluates performance using error metrics, and presents results through a dashboard-style interface.</p></div>
-            <div class="mini"><h4>Decision support</h4><p>The output is designed for planners, analysts, and store operations teams who need practical visibility into demand trends rather than a purely academic model score.</p></div>
-            <div class="mini"><h4>Current direction</h4><p>The next version focuses on cleaner dashboards, SQL-backed reporting, Power BI integration, and clearer scenario analysis for stock planning decisions.</p></div>
+            <div class="mini">
+              <h4>Forecasting approach</h4>
+              <p>The system tests multiple forecasting methods against real retail data, including trend and seasonality models, to find which approach best fits different product types and sales patterns. Forecasts are evaluated on how close they come to actual sales, not just how complex they are.</p>
+            </div>
+            <div class="mini">
+              <h4>Planning output</h4>
+              <p>Results are presented through an interactive dashboard designed for non-technical users. Planners can review forecasts by product, compare scenarios, and spot where demand is likely to spike or dip before it happens.</p>
+            </div>
           </div>
           <div class="stack">
-            <span class="pill">Python</span><span class="pill">Pandas</span><span class="pill">Scikit-learn</span><span class="pill">Statsmodels</span><span class="pill">Prophet</span><span class="pill">LSTM</span><span class="pill">Streamlit</span><span class="pill">Forecasting</span><span class="pill">Retail analytics</span>
+            <span class="pill">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">Demand forecasting</span>
+            <span class="pill">Seasonality analysis</span>
+            <span class="pill">Inventory planning</span>
+            <span class="pill">Retail analytics</span>
           </div>
         </div>
       </article>
     </section>
 
+    <!-- CLIENTIQ -->
+    <section id="clientiq" class="reveal">
+      <div class="section-head"><span>02 | Customer analytics</span><div class="line"></div></div>
+      <h2>ClientIQ</h2>
+      <p class="lead">A customer analytics tool that helps small businesses understand who their customers are, which ones are at risk of leaving, and what to do about it.</p>
+
+      <article class="project-clientiq">
+        <div class="project-hero">
+          <div class="badge badge-amber">Customer Analytics | Segmentation | Python</div>
+          <h3>ClientIQ</h3>
+          <p>Most small businesses collect sales data but have no way to turn it into decisions. They don't know which customers are their most valuable, who hasn't come back in a while, or where to focus their time. ClientIQ was built to answer those questions from a simple sales file, no technical background required.</p>
+        </div>
+
+        <div class="project-body">
+          <div class="outcome-strip">
+            <div class="outcome-cell">
+              <div class="outcome-label">The problem</div>
+              <div class="outcome-text">Small businesses lose customers without noticing. There's no easy way to see who's at risk, who's valuable, or who to contact first.</div>
+            </div>
+            <div class="outcome-cell">
+              <div class="outcome-label">What was built</div>
+              <div class="outcome-text">A dashboard that takes transaction data and automatically groups customers by behaviour, flags who is at risk of leaving, and produces a prioritised contact list.</div>
+            </div>
+            <div class="outcome-cell">
+              <div class="outcome-label">The result</div>
+              <div class="outcome-text">Business owners can see their most valuable customers, who to win back this week, and how their customer base is trending over time.</div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="mini">
+              <h4>How it groups customers</h4>
+              <p>The tool looks at three things for each customer: how recently they bought, how often they buy, and how much they spend. Using these signals, it automatically groups customers into tiers such as top spenders, regulars, occasional buyers, and those who are slipping away.</p>
+            </div>
+            <div class="mini">
+              <h4>Predicting who will return</h4>
+              <p>A prediction model runs on each customer to estimate whether they are likely to come back in the next 60 days. This turns a historical view of sales into a forward-looking tool, giving businesses a chance to act before a customer is lost.</p>
+            </div>
+            <div class="mini">
+              <h4>Win-back and planning</h4>
+              <p>The tool produces a prioritised list of customers to contact, sorted by estimated annual value. It also shows revenue trends by month and by day of the week, so businesses can spot their busiest periods and plan accordingly.</p>
+            </div>
+            <div class="mini">
+              <h4>Built for different business types</h4>
+              <p>The tool adapts to five types of business: retail stores, barbershops and salons, restaurants and cafes, service providers, and general retail. Each gets its own labels, thresholds, and suggested actions written in plain language.</p>
+            </div>
+          </div>
+
+          <div class="stack">
+            <span class="pill">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill">Customer segmentation</span>
+            <span class="pill">Churn analysis</span>
+            <span class="pill">Customer lifetime value</span>
+            <span class="pill">Revenue trend analysis</span>
+            <span class="pill">Retail analytics</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE -->
     <section id="experience" class="reveal">
-      <div class="section-head"><span>02 | Experience</span><div class="line"></div></div>
+      <div class="section-head"><span>03 | Experience</span><div class="line"></div></div>
       <h2>Retail and analytics experience</h2>
       <p class="lead">Real operational experience across stock, sales, campaigns, and reporting. This is the context behind the technical work.</p>
       <div class="experience">
@@ -130,36 +273,63 @@
       </div>
     </section>
 
+    <!-- ADDITIONAL PROJECTS -->
     <section id="projects" class="reveal">
-      <div class="section-head"><span>03 | Additional work</span><div class="line"></div></div>
+      <div class="section-head"><span>04 | Additional work</span><div class="line"></div></div>
       <h2>Selected projects</h2>
       <p class="lead">Focused project work in forecasting, customer analytics, and commercial reporting.</p>
       <div class="cards">
-        <div class="card"><h3>Customer Purchase Behaviour Model</h3><p>Classification project using transaction behaviour and RFM-style features to identify customers more likely to purchase. Framed as a practical targeting tool for marketing and commercial teams.</p></div>
+        <div class="card card-highlight">
+          <h3>ClientIQ</h3>
+          <p>Customer analytics dashboard that groups customers by behaviour, predicts who is likely to return, and flags who is at risk of leaving. Built for retail stores, salons, restaurants, and service businesses. <a href="#clientiq" style="color:var(--amber);text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:11px;">Full details above</a></p>
+        </div>
         <div class="card"><h3>Retail Performance Dashboard</h3><p>Excel-based dashboard tracking revenue, transactions, product performance, and operational KPIs. Designed to make daily and weekly performance easier to review.</p></div>
         <div class="card"><h3>Marketing Performance Analysis</h3><p>Campaign analysis across content channels, focusing on engagement, reach, and actionable performance trends.</p></div>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="reveal">
-      <div class="section-head"><span>04 | Skills</span><div class="line"></div></div>
+      <div class="section-head"><span>05 | Skills</span><div class="line"></div></div>
       <h2>Toolkit</h2>
-      <p class="lead">A practical mix of data analysis, forecasting, retail operations, and commercial reporting skills.</p>
+      <p class="lead">A practical mix of data analysis, forecasting, machine learning, and commercial reporting skills built across real retail environments and independent projects.</p>
       <div class="skill-block"><h3>Data and analytics</h3><div class="skills"><span class="skill core">Python</span><span class="skill core">Pandas</span><span class="skill core">Excel</span><span class="skill">SQL</span><span class="skill">Power BI</span><span class="skill">Data cleaning</span><span class="skill">Dashboarding</span></div></div>
       <div class="skill-block"><h3>Forecasting and modelling</h3><div class="skills"><span class="skill core">Demand forecasting</span><span class="skill core">ARIMA</span><span class="skill core">Prophet</span><span class="skill">LSTM</span><span class="skill">Scikit-learn</span><span class="skill">RMSE</span><span class="skill">MAPE</span></div></div>
+      <div class="skill-block"><h3>Machine learning</h3><div class="skills"><span class="skill core">Random Forest</span><span class="skill core">K-Means clustering</span><span class="skill core">RFM segmentation</span><span class="skill">Cross-validation</span><span class="skill">CLV modelling</span><span class="skill">Churn prediction</span><span class="skill">Feature engineering</span></div></div>
       <div class="skill-block"><h3>Commercial and retail</h3><div class="skills"><span class="skill core">Inventory control</span><span class="skill core">Stock variance</span><span class="skill core">KPI reporting</span><span class="skill">Replenishment</span><span class="skill">Sales analysis</span><span class="skill">Campaign analysis</span></div></div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="reveal">
-      <div class="section-head"><span>05 | Contact</span><div class="line"></div></div>
-      <div class="contact"><div class="card-top"></div><div class="inner"><h2>Let’s connect.</h2><p>I am open to roles in data analysis, commercial analytics, demand planning, inventory analytics, and retail forecasting. Based in London and open to hybrid or on-site opportunities.</p><div class="actions"><a class="btn btn-primary" href="mailto:yeurihernandez23@gmail.com">Email me</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/yeuri-hernandez-000183196" target="_blank" rel="noopener">LinkedIn</a></div></div></div>
+      <div class="section-head"><span>06 | Contact</span><div class="line"></div></div>
+      <div class="contact">
+        <div class="card-top"></div>
+        <div class="inner">
+          <h2>Let's connect.</h2>
+          <p>I am open to roles in data analysis, commercial analytics, demand planning, inventory analytics, retail forecasting, and customer intelligence. Based in London and open to hybrid or on-site opportunities.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:yeurihernandez23@gmail.com">Email me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/yeuri-hernandez-000183196" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer><span>Yeuri Hernandez | London, UK | 2026</span><span>Data Science | Retail Analytics | Forecasting</span></footer>
+    <footer>
+      <span>Yeuri Hernandez | London, UK | 2026</span>
+      <span>Data Science | Retail Analytics | Customer Intelligence</span>
+    </footer>
+
   </div>
+
   <script>
-    const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}}),{threshold:.08});
-    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
+      }),
+      { threshold: .08 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
   </script>
 </body>
 </html>
